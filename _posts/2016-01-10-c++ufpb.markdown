@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "C++ Developer Intern"
+institution: "LAVID/UFPB"
+location: "João Pessoa, Brazil"
+start_date:   2016-01-10 14:21:59 +00:00
+end_date:   2017-12-31 14:21:59 +00:00
+image: /images/lavid.png
+categories: experience
+author: "Pedro Figueiredo"
+---
+
+Developed and optimized of software for image and video processing. Implemented application that leveraged object recognition via CNNs and text-to-speech tools for the visually impaired.

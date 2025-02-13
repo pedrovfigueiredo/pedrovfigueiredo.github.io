@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Graduate Teaching Assistant"
+institution: "Texas A&M University"
+location: "College Station, TX, United States of America"
+start_date:   2021-01-15 14:21:59 +00:00
+end_date:   2023-05-15 14:21:59 +00:00
+image: /images/tamu.jpg
+categories: teaching
+author: "Pedro Figueiredo"
+---
+
+Lectured and developed assignments for practical classes of CSCE 121 Introduction to Program Design & Concepts (C++) - Spring 2021; and CSCE 221 Data Structures and Algorithms Spring 2022. Developed main project deliverable and performed grading for CSCE 310 Database Systems - Summer 2022. Hosted office hours and performed grading for CSCE 441 Computer Graphics - [Fall 2021](https://people.engr.tamu.edu/nimak/Courses), [Fall 2022](https://people.engr.tamu.edu/nimak/Courses/CSCE441-CompGraph/Fall2022/index.html); and CSCE 448 Computational Photography - [Spring 2023](https://people.engr.tamu.edu/nimak/Courses/CompPhoto/Spring2023/index.html).

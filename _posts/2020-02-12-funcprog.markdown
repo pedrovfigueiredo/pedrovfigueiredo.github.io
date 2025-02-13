@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "How to Increase Interest in Studying Functional Programming via Interdisciplinary Application"
+date:   2020-02-12 14:21:59 +00:00
+image: /images/eltepaper.png
+categories: research
+author: "Pedro Figueiredo"
+authors: "<strong>Pedro Figueiredo</strong>, Yuri Kim, Nghia Le Minh, Evan Sitt, Xue Ying, Viktória Zsók"
+venue: "Proceedings Eighth and Ninth International Workshop on Trends in Functional Programming in Education"
+paper: /pdfs/eltepaper.pdf
+website: http://eptcs.web.cse.unsw.edu.au/paper.cgi?TFPIE2019.3
+---
+Explores the use of a ray tracer application to enhance student engagement in functional programming through a teaching experience with positive outcomes.

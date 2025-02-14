@@ -72,7 +72,7 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:240px">
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               {% if post.image %}
                 <img src="/tn{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
               {% elsif post.video %}
@@ -343,7 +343,7 @@
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               {% if post.image %}
-                <img src="/tn{{ post.image }}" alt="project image" style="width:50%; height:50%; display:block; margin:0 auto;" />
+                <img src="/tn{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:50%; max-height:50%; display:block; margin:0 auto" />
               {% elsif post.video %}
                 <video autoplay loop muted playsinline style="width:50%; height:50%; display:block; margin:0 auto;">
                   <source src="/tn{{ post.video }}" type="video/mp4">

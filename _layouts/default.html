@@ -129,7 +129,6 @@
         </table>
         <br>
         <br>
-        <br>
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -194,7 +193,6 @@
           {% endfor %}
           {% endfor %}
         </table>
-        <br>
         <br>
         <br>
         <!-- New Teaching Section -->
@@ -264,7 +262,6 @@
         </table>
         <br>
         <br>
-        <br>
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -275,7 +272,7 @@
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'experience' and cat != 'teaching' %}
+          {% if cat != 'research' and cat != 'experience' and cat != 'teaching' and cat != 'award' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               {% if post.image %}
@@ -293,6 +290,73 @@
               <em>{{ post.subtitle }}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
+              <br>
+              {% if post.website %}
+              <a href="{{ post.website }}">website</a> /
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{ post.paper }}">paper</a> /
+              {% endif %}
+              {% if post.patent %}
+              <a href="{{ post.patent }}">patent</a> /
+              {% endif %}
+              {% if post.patent2 %}
+              <a href="{{ post.patent2 }}">patent #2</a> /
+              {% endif %}
+              {% if post.patent3 %}
+              <a href="{{ post.patent3 }}">patent #3</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{ post.code }}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{ post.poster }}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{ post.slides }}">slides</a> /
+              {% endif %}
+              {% if post.presentation %}
+                <a href="{{ post.presentation }}">presentation</a> /
+              {% endif %}
+              <p></p>
+              <div style="text-align: justify;">{{ post.excerpt }}</div>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <!-- New Awards Section -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Awards</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'award' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              {% if post.image %}
+                <img src="/tn{{ post.image }}" alt="project image" style="width:50%; height:50%; display:block; margin:0 auto;" />
+              {% elsif post.video %}
+                <video autoplay loop muted playsinline style="width:50%; height:50%; display:block; margin:0 auto;">
+                  <source src="/tn{{ post.video }}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              {% endif %}
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{ post.title }}</h3>
+              <br>
+              <em>{{ post.institution }}</em>
+              <br>
+              {{ post.date | date: "%Y-%m-%d" }} | {{ post.location }}
               <br>
               {% if post.website %}
               <a href="{{ post.website }}">website</a> /

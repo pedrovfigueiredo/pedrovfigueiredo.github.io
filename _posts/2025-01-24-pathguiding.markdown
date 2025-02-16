@@ -6,7 +6,7 @@ image: /images/pathguiding.png
 categories: research
 author: "Pedro Figueiredo"
 authors: "<strong>Pedro Figueiredo</strong>, Qihao He, Nima Khademi Kalantari"
-venue: "ACM SIGGRAPH"
+# venue: "ACM SIGGRAPH"
 # paper: https://arxiv.org/pdf/2209.13284.pdf
 # code: https://github.com/pedrovfigueiredo/frameintIFE
 # website: https://people.engr.tamu.edu/nimak/Papers/WACV2023_Interp/index.html

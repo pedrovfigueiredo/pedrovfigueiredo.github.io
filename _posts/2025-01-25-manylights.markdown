@@ -5,7 +5,7 @@ date:   2025-01-25 14:21:59 +00:00
 image: /images/manylights.png
 categories: research
 author: "Pedro Figueiredo"
-authors: "<strong>Pedro Figueiredo</strong>, Qihao He, Nima Khademi Kalantari"
+authors: "<strong>Pedro Figueiredo</strong>, Qihao He, Steve Bako, Nima Khademi Kalantari"
 # venue: "ACM SIGGRAPH"
 # paper: https://arxiv.org/pdf/2209.13284.pdf
 # code: https://github.com/pedrovfigueiredo/frameintIFE

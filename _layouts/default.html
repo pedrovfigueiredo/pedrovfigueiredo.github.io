@@ -156,7 +156,7 @@
               <br>
               <em>{{ post.institution }}</em>
               <br>
-              {{ post.start_date | date: "%Y-%m-%d" }} - {{ post.end_date | date: "%Y-%m-%d" }} | {{ post.location }}
+              {{ post.start_date | date: "%m-%Y" }} - {{ post.end_date | date: "%m-%Y" }} | {{ post.location }}
               <br>
               {% if post.website %}
               <a href="{{ post.website }}">website</a> /
@@ -223,7 +223,7 @@
               <br>
               <em>{{ post.institution }}</em>
               <br>
-              {{ post.start_date | date: "%Y-%m-%d" }} - {{ post.end_date | date: "%Y-%m-%d" }} | {{ post.location }}
+              {{ post.start_date | date: "%m-%Y" }} - {{ post.end_date | date: "%m-%Y" }} | {{ post.location }}
               <br>
               {% if post.website %}
               <a href="{{ post.website }}">website</a> /
@@ -289,7 +289,7 @@
               <br>
               <em>{{ post.subtitle }}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              {{ post.date | date: "%m-%Y" }}
               <br>
               {% if post.website %}
               <a href="{{ post.website }}">website</a> /
@@ -356,7 +356,7 @@
               <br>
               <em>{{ post.institution }}</em>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }} | {{ post.location }}
+              {{ post.date | date: "%m-%Y" }} | {{ post.location }}
               <br>
               {% if post.website %}
               <a href="{{ post.website }}">website</a> /

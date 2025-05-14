@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Study</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .description {
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="description" style="font-size: 20px;">
+	    We greatly appreciate your participation in this survey, which aims to evaluate the realism of material generation methods. <br>
+	    Each survey contains 10 examples and should take less than 2 minutes to complete. <br>
+	    You are welcome to take multiple surveys. After completing one, you may reopen this link to start a new randomized survey. <br><br>
+	    Thank you very much for your time and valuable input!
+    </div>
+
+    <button class="button" onclick="randomizeLink()">Take the Survey</button>
+
+    <script>
+        function randomizeLink() {
+            const formUrls = ["https://forms.gle/Byj8nUqpw2cWbmw1A","https://forms.gle/CXWCv3QrNmHNmsiV9","https://forms.gle/AnnMVibcEY92ydUf8","https://forms.gle/dGKQW4QS3tzSW1E56","https://forms.gle/CYEQzBkjCxbxyvx26","https://forms.gle/W56e2T2nJUetT9b4A","https://forms.gle/BMbNMYucYxgigigF8","https://forms.gle/EPCV7Vk2UanaAiYz7","https://forms.gle/1SxrVfE2tzZdSDcF6","https://forms.gle/QJBqgTCT4XiB61189","https://forms.gle/vRnnqpGnNdmSU1Tn9","https://forms.gle/Syf658SqwArvmCEK8","https://forms.gle/xY6EgPuAHBN1ULnYA","https://forms.gle/Mh4cHw2sWX9Z5YaEA","https://forms.gle/QpTP1yqBFwuougV47","https://forms.gle/Puy7y4HPagwxwcvf9","https://forms.gle/TfKEdcG52zykvQcW6","https://forms.gle/xU4LsZkbAmPN7VDAA","https://forms.gle/YmBtQtSznKVyeJAa6","https://forms.gle/AjV55tnaymcSzHq79","https://forms.gle/19fPmdnzcQGhLSmp8","https://forms.gle/tedCpUgEAhZJRGkj8","https://forms.gle/EMgck5NjBvhWKju48","https://forms.gle/2TKWboZH22xM3ytJ9","https://forms.gle/wX9dWFft3M31xWQM8","https://forms.gle/SWwZYKmjaCtuDMPp9","https://forms.gle/Rb67p1q4hbQ6X5bV8","https://forms.gle/NQnkQa2uDaoo2DCb8","https://forms.gle/V1py4pKXSrsHhKhj9","https://forms.gle/JXPraTsAeD9DY8sp7","https://forms.gle/VkJQiV17US1UrzD17","https://forms.gle/AW9wJS8jJJuDoAZV9","https://forms.gle/pehk6Wk3VMPo7qmSA","https://forms.gle/PrzepwmYDYMCXU4W9","https://forms.gle/EqPwnZ17gZuR7oyt7","https://forms.gle/bzS1jcsFFCQV3Mkc6","https://forms.gle/LgKz1d91YT7Dy9MS7","https://forms.gle/KmSMEyP1hawaj8UZ7","https://forms.gle/BgJ2FLmBqfdC8qUJ8","https://forms.gle/UGZmNFmAXPLwGmC3A","https://forms.gle/bUACV87XmjaBtTKN8","https://forms.gle/6RmfRmCGUCPfDQzD9","https://forms.gle/SUDNyemRfPPh4xpK7","https://forms.gle/s9AkS98PKrQr2QS8A","https://forms.gle/wxdJH2BMpkK2rjDc8","https://forms.gle/r6EYL6yvG93PMDGu7","https://forms.gle/1Rnn4zRSDCUXKb8cA","https://forms.gle/iXa9NjjwYPedg8Qk8","https://forms.gle/eze48unTkfQgHYBU8","https://forms.gle/kUhJma8yGymKf4Et5","https://forms.gle/RjoieZuToC19eDkU9","https://forms.gle/z15g7absRc39ffXG8","https://forms.gle/pNyVsaFQi2VURMJq9","https://forms.gle/vd9KFHaf5W8392r9A","https://forms.gle/qRNwWUHnXvUh4wW66","https://forms.gle/aiYtMLMP8ytksLycA","https://forms.gle/WrZHa6hY7Js3XPK86","https://forms.gle/S8gCk9uNQYxQbghb9","https://forms.gle/hPvet7Gb97ctsZqw5","https://forms.gle/WefVT3eDJ7VzUqjd8","https://forms.gle/mXJ3Sh7JdLkD2LK16","https://forms.gle/dpkm5Dt3dXbnWsLv7","https://forms.gle/PiuW1CbiWasCBVcp6","https://forms.gle/4zr52JKMSL8rvBpz9","https://forms.gle/B8XmGZuPvnzZGQWJ9","https://forms.gle/ar37vAnVcQTa95FA9","https://forms.gle/iFAut56SsfeaqEds7","https://forms.gle/4e5CKAvHtKLgXGKLA","https://forms.gle/JvBs2w4tD3toBHsq6","https://forms.gle/zvVGdiv47zZYf8dT6","https://forms.gle/a3PKb5r9JEAby6KE6","https://forms.gle/9aZiWcqmc4ZdBUT2A","https://forms.gle/tXTtiCuaFd6fp1tAA","https://forms.gle/woeLimms75sfZSb67","https://forms.gle/hiQs3DqSJfXAEF9EA","https://forms.gle/kVEAdxav55xq1SeQ7","https://forms.gle/kEff3CoVB1VutJtn8","https://forms.gle/DGn4cEGVVt1vyGre7","https://forms.gle/Pvvip7eJFVkeB8p79","https://forms.gle/KBxNtdR4bia2itc26","https://forms.gle/agH4ZkzM5vJ6uoFD7","https://forms.gle/vp6Nw6wp9fQ96oyJ9","https://forms.gle/RjsWs758AtqQKhARA","https://forms.gle/r11rgGLCtvraPywdA","https://forms.gle/FjRiKJHjVmkxKadE7","https://forms.gle/JanRqSEBzJVV1PQT7","https://forms.gle/SfJJRvUMC9ibsmui9","https://forms.gle/3UaPfBrAiZ8WtpX18","https://forms.gle/xkqbmbDFR7gcbDdT8","https://forms.gle/3QBRMqyM1YAeZGU38","https://forms.gle/DvQs72vdQCyEA3Rc6","https://forms.gle/4gzEVGnULQE2KfEK7","https://forms.gle/qMyZC3s6TsaYXNXq9","https://forms.gle/RtavfMXGekgj9FN98","https://forms.gle/8cZLp4wfBjBL21dQ8","https://forms.gle/mEdzdgjiQGzJo1Fv8","https://forms.gle/smabWSj9DJ4nvvir5","https://forms.gle/6D5jUbhsHFK6zVdf8","https://forms.gle/rqSJzcZNyeqPhdRU7","https://forms.gle/SBeGw9Wp9jtYANe8A","https://forms.gle/SfeNTEspru734uEq6","https://forms.gle/w7jX3jZnNqM6svGz6","https://forms.gle/w8UtbXTWUtBvUB8x7","https://forms.gle/LShdpzxZSwJbrBgy8","https://forms.gle/U4UgZubDxRTtn4U4A","https://forms.gle/J7dQAtKKc6L4R6Jr5","https://forms.gle/w4sWdBdp1x5yQDZm9","https://forms.gle/hEWA9osDjk8buNi97","https://forms.gle/dZsvtKc5ggBei6jcA","https://forms.gle/3Z9Bid7D8ugnjEnu5","https://forms.gle/52NaC8Cg8yq3Wnmt6","https://forms.gle/JbMj2VGBCcmG4im57","https://forms.gle/LYpQpTbyBzeDYzHa6","https://forms.gle/rVZn5D826fXNDGKr9","https://forms.gle/oRuQXyiAeiqLoJy1A","https://forms.gle/juiodUTEPJceQesw8","https://forms.gle/gKhDaMMK9cXx9ZSP8","https://forms.gle/8VpYYBr5yNKdTUTN7","https://forms.gle/nJ3T3i8eWS3x9vA49","https://forms.gle/ye4oHpPpV4YanQnR7","https://forms.gle/AVmJd4d6X91quPuj6","https://forms.gle/Rfv6qVydVfojhPr76","https://forms.gle/yHWtQ9ZVXd2uhWM16","https://forms.gle/wqqSJAqNDNhDVW3S9","https://forms.gle/cEcEqecUhq5wMa7z6","https://forms.gle/VYeFVF4tAJA45So56","https://forms.gle/5dDCmk3UT69vZzmj8","https://forms.gle/89s2TCD6tSgJEFFR9","https://forms.gle/SnhSmCADSDnbkMaQ8","https://forms.gle/SCptFsHKd4md4C4g7","https://forms.gle/ku8Jfc8uR665zz6MA","https://forms.gle/9bm39XxSPLdhFeyQA","https://forms.gle/FAxf5R3J9xBVX3Ri9","https://forms.gle/hAXNNZNExpKozHG4A","https://forms.gle/8ZBETAtLfQjo3zhn9","https://forms.gle/v4HADqPUfhzmpY9K7","https://forms.gle/ToEEdzmu8tZoHBwy5","https://forms.gle/3m28c1mAk2nBkK926","https://forms.gle/otw5uo3F97hU7WJj9","https://forms.gle/opeqv9gLTGo3EHHj7","https://forms.gle/Tyf6CnZzvUBtzmoh7"];
+
+            // Randomly select one of the form links
+            const randomIndex = Math.floor(Math.random() * formUrls.length);
+            const selectedLink = formUrls[randomIndex];
+
+            // Redirect the user to the selected form
+            window.location.href = selectedLink;
+        }
+    </script>
+
+</body>
+</html>

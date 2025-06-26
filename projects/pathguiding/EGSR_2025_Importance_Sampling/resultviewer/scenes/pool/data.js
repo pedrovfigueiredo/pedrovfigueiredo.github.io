@@ -1,0 +1,234 @@
+const data =
+{
+    "imageBoxes": [
+        {
+            "title": "Images",
+            "elements": [
+                {
+                    "title": "Reference",
+                    "version": "-",
+                    "image": "Reference.png"
+                },
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF).png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM.png"
+                },
+                {
+                    "title": "Ours (DF-L 32x16)",
+                    "version": "-",
+                    "image": "Ours (DF-L 32x16).png"
+                },
+                {
+                    "title": "Ours (DF-L 64x32)",
+                    "version": "-",
+                    "image": "Ours (DF-L 64x32).png"
+                }
+            ]
+        },
+        {
+            "title": "MAPE",
+            "elements": [
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF)-MAPE.png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG-MAPE.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance-MAPE.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS-MAPE.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-MAPE.png"
+                },
+                {
+                    "title": "Ours (DF-L 32x16)",
+                    "version": "-",
+                    "image": "Ours (DF-L 32x16)-MAPE.png"
+                },
+                {
+                    "title": "Ours (DF-L 64x32)",
+                    "version": "-",
+                    "image": "Ours (DF-L 64x32)-MAPE.png"
+                }
+            ]
+        },
+        {
+            "title": "MRSE",
+            "elements": [
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF)-MRSE.png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG-MRSE.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance-MRSE.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS-MRSE.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-MRSE.png"
+                },
+                {
+                    "title": "Ours (DF-L 32x16)",
+                    "version": "-",
+                    "image": "Ours (DF-L 32x16)-MRSE.png"
+                },
+                {
+                    "title": "Ours (DF-L 64x32)",
+                    "version": "-",
+                    "image": "Ours (DF-L 64x32)-MRSE.png"
+                }
+            ]
+        },
+        {
+            "title": "FLIP",
+            "elements": [
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF)-FLIP.png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG-FLIP.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance-FLIP.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS-FLIP.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-FLIP.png"
+                },
+                {
+                    "title": "Ours (DF-L 32x16)",
+                    "version": "-",
+                    "image": "Ours (DF-L 32x16)-FLIP.png"
+                },
+                {
+                    "title": "Ours (DF-L 64x32)",
+                    "version": "-",
+                    "image": "Ours (DF-L 64x32)-FLIP.png"
+                }
+            ]
+        }
+    ],
+    "stats": [
+        {
+            "title": "Stats",
+            "labels": [
+                "PT (BSDF)",
+                "PPG",
+                "Variance",
+                "NIS",
+                "NPM",
+                "Ours (DF-L 32x16)",
+                "Ours (DF-L 64x32)"
+            ],
+            "series": [
+                {
+                    "label": "MAPE",
+                    "data": [
+                        "0.936916",
+                        "0.090657",
+                        "0.080050",
+                        "0.308755",
+                        "0.279669",
+                        "0.235829",
+                        "0.159951"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "MRSE",
+                    "data": [
+                        "1.684581",
+                        "0.021840",
+                        "0.012462",
+                        "0.159841",
+                        "0.266252",
+                        "0.094403",
+                        "0.042045"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "FLIP",
+                    "data": [
+                        "0.574434",
+                        "0.079213",
+                        "0.069008",
+                        "0.190143",
+                        "0.180269",
+                        "0.147278",
+                        "0.104400"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,233 @@
+{
+    "imageBoxes": [
+        {
+            "title": "Images",
+            "elements": [
+                {
+                    "title": "Reference",
+                    "version": "-",
+                    "image": "Reference.png"
+                },
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF).png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N).png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L).png"
+                }
+            ]
+        },
+        {
+            "title": "MAPE",
+            "elements": [
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF)-MAPE.png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG-MAPE.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance-MAPE.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS-MAPE.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-MAPE.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N)-MAPE.png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L)-MAPE.png"
+                }
+            ]
+        },
+        {
+            "title": "relMSE",
+            "elements": [
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF)-relMSE.png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG-relMSE.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance-relMSE.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS-relMSE.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-relMSE.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N)-relMSE.png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L)-relMSE.png"
+                }
+            ]
+        },
+        {
+            "title": "FLIP",
+            "elements": [
+                {
+                    "title": "PT (BSDF)",
+                    "version": "-",
+                    "image": "PT (BSDF)-FLIP.png"
+                },
+                {
+                    "title": "PPG",
+                    "version": "-",
+                    "image": "PPG-FLIP.png"
+                },
+                {
+                    "title": "Variance",
+                    "version": "-",
+                    "image": "Variance-FLIP.png"
+                },
+                {
+                    "title": "NIS",
+                    "version": "-",
+                    "image": "NIS-FLIP.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-FLIP.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N)-FLIP.png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L)-FLIP.png"
+                }
+            ]
+        }
+    ],
+    "stats": [
+        {
+            "title": "Stats",
+            "labels": [
+                "PT (BSDF)",
+                "PPG",
+                "Variance",
+                "NIS",
+                "NPM",
+                "Ours (DF-N)",
+                "Ours (DF-L)"
+            ],
+            "series": [
+                {
+                    "label": "MAPE",
+                    "data": [
+                        "1.464108",
+                        "0.800204",
+                        "1.007326",
+                        "0.821798",
+                        "1.069926",
+                        "0.546895",
+                        "0.532023"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "relMSE",
+                    "data": [
+                        "13.196363",
+                        "2.815752",
+                        "5.486040",
+                        "2.148382",
+                        "3.895525",
+                        "0.792408",
+                        "0.688774"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "FLIP",
+                    "data": [
+                        "0.958527",
+                        "0.610343",
+                        "0.748039",
+                        "0.638031",
+                        "0.803599",
+                        "0.427190",
+                        "0.418118"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                }
+            ]
+        }
+    ]
+}

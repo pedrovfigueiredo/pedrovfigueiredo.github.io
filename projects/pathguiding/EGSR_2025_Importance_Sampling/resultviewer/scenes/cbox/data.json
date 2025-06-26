@@ -1,0 +1,137 @@
+{
+    "imageBoxes": [
+        {
+            "title": "Images",
+            "elements": [
+                {
+                    "title": "Reference",
+                    "version": "-",
+                    "image": "Reference.png"
+                },
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N).png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L).png"
+                }
+            ]
+        },
+        {
+            "title": "MAPE",
+            "elements": [
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-MAPE.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N)-MAPE.png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L)-MAPE.png"
+                }
+            ]
+        },
+        {
+            "title": "MRSE",
+            "elements": [
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-MRSE.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N)-MRSE.png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L)-MRSE.png"
+                }
+            ]
+        },
+        {
+            "title": "FLIP",
+            "elements": [
+                {
+                    "title": "NPM",
+                    "version": "-",
+                    "image": "NPM-FLIP.png"
+                },
+                {
+                    "title": "Ours (DF-N)",
+                    "version": "-",
+                    "image": "Ours (DF-N)-FLIP.png"
+                },
+                {
+                    "title": "Ours (DF-L)",
+                    "version": "-",
+                    "image": "Ours (DF-L)-FLIP.png"
+                }
+            ]
+        }
+    ],
+    "stats": [
+        {
+            "title": "Stats",
+            "labels": [
+                "NPM",
+                "Ours (DF-N)",
+                "Ours (DF-L)"
+            ],
+            "series": [
+                {
+                    "label": "MAPE",
+                    "data": [
+                        "0.039753",
+                        "0.042928",
+                        "0.047342"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "MRSE",
+                    "data": [
+                        "0.002882",
+                        "0.003752",
+                        "0.004551"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "FLIP",
+                    "data": [
+                        "0.058528",
+                        "0.063399",
+                        "0.068063"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                }
+            ]
+        }
+    ]
+}

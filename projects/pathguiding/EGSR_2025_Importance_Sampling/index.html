@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Neural Path Guiding with Distribution Factorization">
+  <meta name="keywords" content="path guiding, importance sampling, machine learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neural Path Guiding with Distribution Factorization</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Neural Path Guiding with <br/>Distribution Factorization</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://people.tamu.edu/~pedrofigueiredo/">Pedro Figueiredo</a>,</span>
+            <span class="author-block">
+              <a href="https://phyqh.github.io/">Qihao He</a>,</span>
+            <span class="author-block">
+              <a href="http://nkhademi.com/">Nima Khademi Kalantari</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Texas A&M University</span>
+          </div>
+          
+          <h1 style="font-size:24px;font-weight:bold">Eurographics Symposium on Rendering (EGSR) 2025</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="media/EGSR_2025_Importance_Sampling.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Author ver.)</span>
+                </a>
+              </span>
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://diglib.eg.org/items/2607538c-583f-4a0f-91c8-c6624353f960"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Eurographics lib.</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2506.00839"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="resultviewer/index.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-book fa-w-14"></i>
+                  </span>
+                  <span>Result Viewer</span>
+                </a>
+              </span>
+              <!-- Supp Link. -->
+              <span class="link-block">
+                <a href="media/EGSR_2025_Importance_Sampling_supp.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary PDF</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/Re_c-CBlSfI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Supplementary Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/pedrovfigueiredo/guiding-df"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container">
+    <div class="container is-centered has-text-centered">
+      <div class="hero-body">
+        <img style='height: auto; width: 90%; object-fit: contain' src="media/equaltimewspp-veachdoor.png" alt="Teaser image of the paper">
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">Distribution Factorization (DF)</span> factorizes the 2D directional distribution as a product of two 1D PDFs for efficient path guiding.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we present a neural path guiding method to aid with Monte Carlo (MC) integration in rendering. Existing neural methods utilize distribution representations that are either fast or expressive, but not both. We propose a simple, but effective, representation that is sufficiently expressive and reasonably fast. Specifically, we break down the 2D distribution over the directional domain into two 1D probability distribution functions (PDF). We propose to model each 1D PDF using a neural network that estimates the distribution at a set of discrete coordinates. The PDF at an arbitrary location can then be evaluated and sampled through interpolation. To train the network, we maximize the similarity of the learned and target distributions. To reduce the variance of the gradient during optimizations and estimate the normalization factor, we propose to cache the incoming radiance using an additional network. Through extensive experiments, we demonstrate that our approach is better than the existing methods, particularly in challenging scenes with complex light transport.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Acknowledgements. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>
+            This project was funded in part by the NSF CAREER Award #2238193. We are grateful to <a href="https://neuropara.github.io/">[Dong et al. 2023]</a> for releasing the source code of their work. We would like to thank the following artists for sharing their scenes and models that appear in our figures: Mareck (Bathroom), SlykDrako (Bedroom), Wig42 (Breakfast, Staircase), Jay-Artist (Kitchen), nacimus (Salle de Bain), Benedikt Bitterli (Veach Door}, Cornell Box) and CN Entertainment, LordSamueliSolo (Swimming Pool).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Acknowledgements. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{figueiredo25guidingdf,
+  booktitle = {Eurographics Symposium on Rendering},
+  editor = {Wang, Beibei and Wilkie, Alexander},
+  title = {{Neural Path Guiding with Distribution Factorization}},
+  author = {Figueiredo, Pedro and He, Qihao and Kalantari, Nima Khademi},
+  year = {2025},
+  publisher = {The Eurographics Association},
+  ISSN = {1727-3463},
+  ISBN = {978-3-03868-292-9},
+  DOI = {10.2312/sr.20251178}
+}
+        
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Neural Importance Sampling of Many Lights"
 date:   2025-06-26 00:00:59 +00:00
-image: /images/manylights.jpg
+image: /images/manylights-diagram.png
 categories: research
 author: "Pedro Figueiredo"
 authors: "<strong>Pedro Figueiredo</strong>, Qihao He, Steve Bako, Nima Khademi Kalantari"

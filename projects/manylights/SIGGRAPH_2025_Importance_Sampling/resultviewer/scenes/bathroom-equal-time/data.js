@@ -1,0 +1,186 @@
+const data =
+{
+    "imageBoxes": [
+        {
+            "title": "Images",
+            "elements": [
+                {
+                    "title": "Reference",
+                    "version": "-",
+                    "image": "Reference.png"
+                },
+                {
+                    "title": "ATS",
+                    "version": "-",
+                    "image": "ATS.png"
+                },
+                {
+                    "title": "SLCRT",
+                    "version": "-",
+                    "image": "SLCRT.png"
+                },
+                {
+                    "title": "ReSTIR",
+                    "version": "-",
+                    "image": "ReSTIR.png"
+                },
+                {
+                    "title": "VARL",
+                    "version": "-",
+                    "image": "VARL.png"
+                },
+                {
+                    "title": "Ours",
+                    "version": "-",
+                    "image": "Ours.png"
+                }
+            ]
+        },
+        {
+            "title": "MAPE",
+            "elements": [
+                {
+                    "title": "ATS",
+                    "version": "-",
+                    "image": "ATS-MAPE.png"
+                },
+                {
+                    "title": "SLCRT",
+                    "version": "-",
+                    "image": "SLCRT-MAPE.png"
+                },
+                {
+                    "title": "ReSTIR",
+                    "version": "-",
+                    "image": "ReSTIR-MAPE.png"
+                },
+                {
+                    "title": "VARL",
+                    "version": "-",
+                    "image": "VARL-MAPE.png"
+                },
+                {
+                    "title": "Ours",
+                    "version": "-",
+                    "image": "Ours-MAPE.png"
+                }
+            ]
+        },
+        {
+            "title": "relMSE",
+            "elements": [
+                {
+                    "title": "ATS",
+                    "version": "-",
+                    "image": "ATS-RELMSE.png"
+                },
+                {
+                    "title": "SLCRT",
+                    "version": "-",
+                    "image": "SLCRT-RELMSE.png"
+                },
+                {
+                    "title": "ReSTIR",
+                    "version": "-",
+                    "image": "ReSTIR-RELMSE.png"
+                },
+                {
+                    "title": "VARL",
+                    "version": "-",
+                    "image": "VARL-RELMSE.png"
+                },
+                {
+                    "title": "Ours",
+                    "version": "-",
+                    "image": "Ours-RELMSE.png"
+                }
+            ]
+        },
+        {
+            "title": "FLIP",
+            "elements": [
+                {
+                    "title": "ATS",
+                    "version": "-",
+                    "image": "ATS-FLIP.png"
+                },
+                {
+                    "title": "SLCRT",
+                    "version": "-",
+                    "image": "SLCRT-FLIP.png"
+                },
+                {
+                    "title": "ReSTIR",
+                    "version": "-",
+                    "image": "ReSTIR-FLIP.png"
+                },
+                {
+                    "title": "VARL",
+                    "version": "-",
+                    "image": "VARL-FLIP.png"
+                },
+                {
+                    "title": "Ours",
+                    "version": "-",
+                    "image": "Ours-FLIP.png"
+                }
+            ]
+        }
+    ],
+    "stats": [
+        {
+            "title": "Stats",
+            "labels": [
+                "ATS",
+                "SLCRT",
+                "ReSTIR",
+                "VARL",
+                "Ours"
+            ],
+            "series": [
+                {
+                    "label": "MAPE",
+                    "data": [
+                        "0.208563",
+                        "0.175132",
+                        "0.217898",
+                        "0.165003",
+                        "0.109793"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "relMSE",
+                    "data": [
+                        "0.123484",
+                        "0.076254",
+                        "0.121557",
+                        "0.071209",
+                        "0.036080"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                },
+                {
+                    "label": "FLIP",
+                    "data": [
+                        "0.165876",
+                        "0.141322",
+                        "0.174392",
+                        "0.134600",
+                        "0.097710"
+                    ],
+                    "track": {
+                        "x": [],
+                        "y": []
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Neural Importance Sampling of Many Lights">
+  <meta name="keywords" content="many lights, direct lighting, importance sampling, machine learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neural Importance Sampling of Many Lights</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Neural Importance Sampling of Many Lights</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://people.tamu.edu/~pedrofigueiredo/">Pedro Figueiredo<sup>1</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://phyqh.github.io/">Qihao He<sup>1</sup></a>,</span>
+            <span class="author-block">
+              <a href="https://web.ece.ucsb.edu/~sbako/">Steve Bako<sup>2</sup></a>,</span>
+            <span class="author-block">
+              <a href="http://nkhademi.com/">Nima Khademi Kalantari<sup>1</sup></a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Texas A&M University</span>
+            <span class="author-block"><sup>2</sup>Aurora Innovation</span>
+          </div>
+          
+          <h1 style="font-size:24px;font-weight:bold">ACM SIGGRAPH 2025 (Conference Track)</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="media/SIGGRAPH_2025_Importance_Sampling.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Author ver.)</span>
+                </a>
+              </span>
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://diglib.eg.org/items/2607538c-583f-4a0f-91c8-c6624353f960"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>ACM lib.</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2505.11729"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="resultviewer/index.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-book fa-w-14"></i>
+                  </span>
+                  <span>Result Viewer</span>
+                </a>
+              </span>
+              <!-- Supp Link. -->
+              <span class="link-block">
+                <a href="media/SIGGRAPH_2025_Importance_Sampling_supp.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary PDF</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/Re_c-CBlSfI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Supplementary Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/pedrovfigueiredo/nis-manylights"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container">
+    <div class="container is-centered has-text-centered">
+      <div class="hero-body">
+        <img style='height: auto; width: 90%; object-fit: contain' src="media/Overview.png" alt="Teaser image of the paper">
+        <h2 class="subtitle has-text-centered">
+          We propose a hybrid neural approach for estimating spatially varying light selection distributions in rendering with many lights.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a neural approach for estimating spatially varying light selection distributions to improve importance sampling in Monte Carlo rendering, particularly for complex scenes with many light sources. Our method uses a neural network to predict the light selection distribution at each shading point based on local information, trained by minimizing the KL-divergence between the learned and target distributions in an online manner. To efficiently manage hundreds or thousands of lights, we integrate our neural approach with light hierarchy techniques, where the network predicts cluster-level distributions and existing methods sample lights within clusters. Additionally, we introduce a residual learning strategy that leverages initial distributions from existing techniques, accelerating convergence during training. Our method achieves superior performance across diverse and challenging scenes in equal-sample settings.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Acknowledgements. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>
+            This project was funded in part by the NSF CAREER Award #2238193. We thank Ryusuke Villemin for the valuable discussions, Vincent Serritella for generating the experimental test data, and Magnus Wrenninge and the Aurora simulation team for support. We are grateful to <a href="https://kevincosner.github.io/publications/Wang2021LCR/index.html">[Wang et al. 2021]</a> for releasing the source code of their work. 
+            We would like to thank the following artists for sharing their scenes and models that appear in our figures:  Mareck (Bathroom), SlykDrako (Bedroom), Amazon Lumberyard (Bistro), Jay-Artist (Living Room), Guillermo M. Leal Llaguno (San Miguel), Wig42 (Staircase), NewSee2l035 (Staircase2), and Mike Winkelmann (Zero Day).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Acknowledgements. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{NIS_ManyLights_sig25,
+ title={Neural Importance Sampling of Many Lights},
+ author={Figueiredo, Pedro and He, Qihao and Bako, Steve and Khademi Kalantari, Nima},
+ booktitle={ACM SIGGRAPH 2025 Conference Papers},
+ year={2025},
+ doi = {10.1145/3721238.3730754},
+ numpages = {11},
+ isbn = {979-8-4007-1540-2/2025/08}, 
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>

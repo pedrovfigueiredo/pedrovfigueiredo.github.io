@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Neural Importance Sampling of Many Lights"
-date:   2025-08-12 14:21:59 +00:00
+date:   2025-06-26 00:00:59 +00:00
 image: /images/manylights.jpg
 categories: research
 author: "Pedro Figueiredo"
